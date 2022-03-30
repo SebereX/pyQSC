@@ -293,9 +293,9 @@ def get_boundary(self, r=0.1, ntheta=40, nphi=130, ntheta_fourier=20, mpol=13, n
 def get_boundary_vmec(self, r=0.1, ntheta=40, nphi=130):
     '''
     Function that, for a given near-axis radial coordinate r, outputs
-    the [X,Y,Z,R] components of the boundary. The resolution along the toroidal
+    the [X,Y,Z,R] components of the VMEC boundary. The resolution along the toroidal
     angle phi is equal to the resolution nphi for the axis, while ntheta
-    is specified by the used.
+    is specified by the user.
 
     Args:
       r (float): near-axis radius r where to create the surface
@@ -371,6 +371,9 @@ def plot_boundary(self, r=0.1, ntheta=80, nphi=150, ntheta_fourier=20, nsections
       colormap (cmap): Custom colormap for the 3D plots
       azim_default: Default azimuthal angle for the three subplots in the 3D surface plot
       show: Whether or not to call the matplotlib/mayavi ``show()`` command.
+      existing_axis: handle to existing axes to plot together
+      plot_3d: false/true to plot the 3d surfaces or not. For 2D plots together using existing axes, must be plot_3d=False
+      vmec: if vmec=True, then plot the vmec boundary. If false, then the cross section for near axis expansion model is plotted.
       kwargs: Any additional key-value pairs to pass to matplotlib's plot_surface.
 
     This function generates plots similar to the ones below:
@@ -394,6 +397,7 @@ def plot_boundary(self, r=0.1, ntheta=80, nphi=150, ntheta_fourier=20, nsections
     
     ## Poloidal plot
     phi1dplot_RZ = np.linspace(0, 2 * np.pi / self.nfp, nsections, endpoint=False)
+    # Create axes if they are not provided
     if not existing_axis:
         fig = plt.figure(figsize=(6, 6), dpi=80)
         ax  = plt.gca()
@@ -430,7 +434,7 @@ def plot_boundary(self, r=0.1, ntheta=80, nphi=150, ntheta_fourier=20, nsections
         fig.savefig(savefig + '_poloidal.pdf')
 
     if plot_3d:
-        ## 3D plot
+        ## 3D plot if so required
         # Set the default azimuthal angle of view in the 3D plot
         # QH stellarators look rotated in the phi direction when
         # azim_default = 0
