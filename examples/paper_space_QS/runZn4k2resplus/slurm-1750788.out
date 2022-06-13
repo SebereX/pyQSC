@@ -1,0 +1,11 @@
+/p/QSOpt/NAEopt/pyQSC/qsc/calculate_r2.py:63: RuntimeWarning: invalid value encountered in true_divide
+  beta_1s = -4 * spsi * sG * mu0 * p2 * etabar * abs_G0_over_B0 / (iota_N * B0 * B0)
+/p/QSOpt/NAEopt/pyQSC/qsc/mercier.py:36: RuntimeWarning: invalid value encountered in true_divide
+  self.DGeod_times_r2 = -(2 * mu0 * mu0 * p2 * p2 * G0 * G0 * G0 * G0 * etabar * etabar \
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 17.262067533478746 and quadratic solution 17.26202898586586 is 3.8547612884798355e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 4.164968934136349 and quadratic solution 4.1649814701628545 is 1.2536026505749476e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 12.759962616718402 and quadratic solution 12.75994869521597 is 1.3921502432623356e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+slurmstepd: error: *** JOB 1750788 ON dawson119 CANCELLED AT 2022-01-15T16:31:19 DUE TO TIME LIMIT ***

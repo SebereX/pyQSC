@@ -377,7 +377,7 @@ class Qsc():
         return np.max((0, self.min_R0_threshold - self.min_R0)) ** 2
         
     @classmethod
-    def from_boozxform(cls, vmec_file, booz_xform_file, order='r2', max_s_for_fit = 0.4, N_phi = [], N_axis = [],
+    def from_boozxform(cls, vmec_file, booz_xform_file, order='r2', min_s_for_fit = 0.05, max_s_for_fit = 0.4, N_phi = [], N_axis = [],
                         rc=[], rs=[], zc=[], zs=[], sigma0=0, I2=0, p2=0, order_fit = 0):
         """
         Load a configuration from a VMEC and a BOOZ_XFORM output files
@@ -402,8 +402,8 @@ class Qsc():
         # Prepare coordinates for fit
         psi_booz = psi_booz_vmec[jlist-1]
         sqrt_psi_booz = np.sqrt(psi_booz)
-        mask = psi_booz/psi_edge < max_s_for_fit
-        mask_vmec = psi_booz_vmec/psi_edge < max_s_for_fit
+        mask = (psi_booz/psi_edge < max_s_for_fit) & (psi_booz/psi_edge > min_s_for_fit)
+        mask_vmec = (psi_booz_vmec/psi_edge < max_s_for_fit) & (psi_booz_vmec/psi_edge > min_s_for_fit)
         # s_fine = np.linspace(0,1,400)
         # sqrts_fine = s_fine
         if N_phi:

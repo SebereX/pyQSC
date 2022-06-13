@@ -1,0 +1,186 @@
+python optAnhark2optZ.py 15 0.3 0.32999999999999996 10 0.036000000000000004 0.048 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 2615.1201887156185 and quadratic solution 2615.1202108206367 is 2.2105018160800682e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 2615.1203286296327 and quadratic solution 2615.1203541335703 is 2.5503937649773434e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1819.9733234860878 and quadratic solution 1819.9733464133924 is 2.292730459885206e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1819.9734041013435 and quadratic solution 1819.9734150415718 is 1.0940228321487666e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 2015.4222210212317 and quadratic solution 2015.4222414809315 is 2.0459699726416147e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 2015.4223640511764 and quadratic solution 2015.4223426908636 is 2.1360312757678912e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1698.2114233410994 and quadratic solution 1698.2114119595053 is 1.138159404945327e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1698.2114465748414 and quadratic solution 1698.2114653713468 is 1.879650540104194e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1785.8984030503002 and quadratic solution 1785.898419304883 is 1.625458276066638e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1785.8984979550855 and quadratic solution 1785.8984866499804 is 1.1305105090286816e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+10 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+11 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+12 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+13 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/
+14 /p/QSOpt/NAEopt/optZ/runZn4k2resExtplus/part009/

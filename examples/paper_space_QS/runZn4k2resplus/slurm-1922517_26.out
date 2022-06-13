@@ -1,0 +1,194 @@
+python optAnhark2optZ.py 15 0.06 0.09 10 0.0 0.01200000000000001 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 2.917097097243567 and quadratic solution 2.917131203985789 is 3.41067422220398e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1.6739405607431472 and quadratic solution 1.6739293307296155 is 1.1230013531760008e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 2.6519595519874937 and quadratic solution 2.65194165534068 is 1.7896646813841954e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 3.004983976010676 and quadratic solution 3.004966691287616 is 1.7284723059951546e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 1.584960543163868 and quadratic solution 1.5849366355712837 is 2.3907592584304638e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 24.010447256829963 and quadratic solution 24.01043661225768 is 1.0644572281393039e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 3.5577582663532827 and quadratic solution 3.5577866458941636 is 2.837954088086292e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 74.38030021695616 and quadratic solution 74.38031213141312 is 1.19144569623586e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 6.242547852422365 and quadratic solution 6.242518921802272 is 2.8930620092459947e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 6.242533401582578 and quadratic solution 6.242518903057967 is 1.4498524611106234e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+10 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+11 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+12 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+13 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+0 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 288.58012080311005 and quadratic solution 288.58013458054876 is 1.377743870989434e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 222.13926786944404 and quadratic solution 222.13927991667893 is 1.2047234889678293e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 192.77039943197323 and quadratic solution 192.77041239487872 is 1.2962905486801901e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+/p/QSOpt/NAEopt/pyQSC/qsc/r_singularity.py:451: UserWarning:   Difference between linear solution 199.283413210456 and quadratic solution 199.28342453672656 is 1.132627056676938e-05
+  warnings.warn("  Difference between linear solution {} and quadratic solution {} is {}".format(linear_solutions[0], quadratic_solutions[0], diff))
+1 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+2 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+3 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+4 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+5 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+6 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+7 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+8 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+9 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/
+14 /p/QSOpt/NAEopt/optZ/runZn4k2resplus/part026/

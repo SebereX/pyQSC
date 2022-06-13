@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --array=1-100   # job array index
+#SBATCH --cpus-per-task 1
+#SBATCH --mem 1G
+#SBATCH -t 48:00:00        # Time limit 
+#SBATCH --export=ALL 
+#SBATCH -J qsOptNAE 
+arrayjob=`cat commands_input.txt | awk -v line=$SLURM_ARRAY_TASK_ID '{if (NR == line) print $0}'`
+run_command="python optAnhark2optZ.py "
+echo $run_command$arrayjob
+bash -c "$run_command$arrayjob"
