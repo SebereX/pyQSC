@@ -227,7 +227,7 @@ def calculate_shear(self,B31c = 0):
             
     dZ31sdp = np.matmul(d_d_varphi, Z31s)
 
-            
+
     # Equation J3: expression for X31c/s
     X31c = 1/2/dldp**2/curvature*(-2*Ba0*Ba1*B1c - Ba0**2*B31c+2*dldp**2*torsion**2*X1c*X20 +
         2*iota**2*X1c*X2c + dldp**2*torsion**2*X1c*X2c + dldp**2*curvature**2*X1c*(2*X20 + X2c) + 
@@ -255,6 +255,7 @@ def calculate_shear(self,B31c = 0):
         2*Y1c*dY20dp + Y1c*dY2cdp - 2*Y2s*dY1sdp + Y1s*dY2sdp) - dldp*curvature*X1c*dZ2sdp +2*dldp*dZ31sdp)
 
     dX31sdp = np.matmul(d_d_varphi, X31s)
+
                         
     # Equation Cb2
     Y31s = 1/4/Ba0/X1c*(-2*Ba1*X1c*Y1s + 2*iota*I2*X1c*Y1s - dldp*(4*curvature*X20 + torsion*I2*
@@ -262,7 +263,6 @@ def calculate_shear(self,B31c = 0):
         I2*Y1c*dXc1v + I2*X1c*dY1cdp + 4*dZ20dp) 
 
     dY31sdp = np.matmul(d_d_varphi, Y31s)
-
     
     # From the equation for Bt to order n=4, and looking at m=0
     LamTilde = 2/Y1s**2*(Ba0*B0*I4 + (Ba1*B0 + Ba0*B20)*I2) + 1/Y1s**2*(-2*iota*(2*X2c**2 + X1c*X31c + 

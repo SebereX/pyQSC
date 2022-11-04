@@ -9,7 +9,7 @@ from .util import mu0
 #logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-def calculate_r2(self):
+def calculate_r2(self, diag = "on"):
     """
     Compute the O(r^2) quantities.
     """
@@ -201,11 +201,14 @@ def calculate_r2(self):
     self.B20 = B20
 
     # O(r^2) diagnostics:
-    self.mercier()
-    self.calculate_grad_grad_B_tensor()
-    #self.grad_grad_B_inverse_scale_length_vs_varphi = t.grad_grad_B_inverse_scale_length_vs_varphi
-    #self.grad_grad_B_inverse_scale_length = t.grad_grad_B_inverse_scale_length
-    self.calculate_r_singularity()
+    if diag == "on":
+        self.mercier()
+        self.calculate_grad_grad_B_tensor()
+        #self.grad_grad_B_inverse_scale_length_vs_varphi = t.grad_grad_B_inverse_scale_length_vs_varphi
+        #self.grad_grad_B_inverse_scale_length = t.grad_grad_B_inverse_scale_length
+        self.calculate_r_singularity()
+    # elif diag == "off":
+        # logger.warning('No r2 diagnostics computed')
 
     if self.helicity == 0:
         self.X20_untwisted = self.X20

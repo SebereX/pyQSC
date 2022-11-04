@@ -34,6 +34,7 @@ class Qsc():
     from .plot import plot, plot_boundary, get_boundary, get_boundary_vmec, B_fieldline, B_contour, plot_axis, flux_tube
     from .Frenet_to_cylindrical import Frenet_to_cylindrical
     from .vmec_input import read_vmec
+    from .qs_optim_config import choose_eta, choose_B22c, choose_Z_axis
     from .to_vmec import to_vmec
     from .util import B_mag
     

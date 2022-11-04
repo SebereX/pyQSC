@@ -423,7 +423,7 @@ def plot_boundary(self, r=0.1, ntheta=80, nphi=150, ntheta_fourier=20, nsections
         if vmec:
             plt.plot(R_2D_spline(phi), z_2D_spline(phi), '--', color=color)
         else:
-            plt.plot(R_2D_spline(phi), z_2D_spline(phi), color=color)
+            plt.plot(R_2D_spline(phi), z_2D_spline(phi), color=color, **kwargs)
     plt.xlabel('R (meters)')
     plt.ylabel('Z (meters)')
     if legend:

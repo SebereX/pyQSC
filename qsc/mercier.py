@@ -38,8 +38,7 @@ def mercier(self):
                        * integral
 
     self.d2_volume_d_psi2 = 4*pi*pi*abs(G0)/(B0*B0*B0)*(3*etabar*etabar - 4*self.B20_mean/B0 + 2 * (self.G2 + iota * self.I2)/G0)
-
+    
     self.DWell_times_r2 = (mu0 * p2 * abs(G0) / (8 * pi * pi * pi * pi * B0 * B0 * B0)) * \
         (self.d2_volume_d_psi2 - 8 * pi * pi * mu0 * p2 * abs(G0) / (B0 * B0 * B0 * B0 * B0))
-
     self.DMerc_times_r2 = self.DWell_times_r2 + self.DGeod_times_r2
