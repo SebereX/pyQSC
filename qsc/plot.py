@@ -290,6 +290,7 @@ def get_boundary(self, r=0.1, ntheta=40, nphi=130, ntheta_fourier=20, mpol=13, n
 
     return x_2D_plot, y_2D_plot, z_2D_plot, R_2Dnew
 
+<<<<<<< HEAD
 def get_boundary_vmec(self, r=0.1, ntheta=40, nphi=130):
     '''
     Function that, for a given near-axis radial coordinate r, outputs
@@ -337,6 +338,11 @@ def get_boundary_vmec(self, r=0.1, ntheta=40, nphi=130):
 def plot_boundary(self, r=0.1, ntheta=80, nphi=150, ntheta_fourier=20, nsections=8, mpol=13, ntor=25,
          fieldlines=False, savefig=None, colormap=None, azim_default=None, legend=True,
          show=True, existing_axis = [], plot_3d = True, vmec = False, **kwargs):
+=======
+def plot_boundary(self, r=0.1, ntheta=80, nphi=150, ntheta_fourier=20, nsections=8,
+         fieldlines=False, savefig=None, colormap=None, azim_default=None,
+         show=True, **kwargs):
+>>>>>>> origin/main
     """
     Plot the boundary of the near-axis configuration. There are two main ways of
     running this function.
@@ -387,10 +393,14 @@ def plot_boundary(self, r=0.1, ntheta=80, nphi=150, ntheta_fourier=20, nsections
     .. image:: poloidalplot.png
        :width: 200
     """
+<<<<<<< HEAD
     if vmec:
         x_2D_plot, y_2D_plot, z_2D_plot, R_2D_plot = self.get_boundary_vmec(r=r, ntheta=ntheta, nphi=nphi)
     else:
         x_2D_plot, y_2D_plot, z_2D_plot, R_2D_plot = self.get_boundary(r=r, ntheta=ntheta, nphi=nphi, ntheta_fourier=ntheta_fourier, mpol = mpol, ntor = ntor)
+=======
+    x_2D_plot, y_2D_plot, z_2D_plot, R_2D_plot = self.get_boundary(r=r, ntheta=ntheta, nphi=nphi, ntheta_fourier=ntheta_fourier)
+>>>>>>> origin/main
     phi = np.linspace(0, 2 * np.pi, nphi)  # Endpoint = true and no nfp factor, because this is what is used in get_boundary()
     R_2D_spline = interp1d(phi, R_2D_plot, axis=1)
     z_2D_spline = interp1d(phi, z_2D_plot, axis=1)
