@@ -98,7 +98,7 @@ def choose_B22c(self, criterion = "std"):
 
     return -4*(self.B2c-3*self.B0*self.etabar**2/4)/self.B0**4
 
-def choose_Z_axis(self, num_harm = 0):
+def choose_Z_axis(self, num_harm = 0, max_num_iter = 70):
     """
     Search the Z harmonics of the axis that minimise the QS residual 
     """
@@ -123,9 +123,10 @@ def choose_Z_axis(self, num_harm = 0):
         
         return self.B20_variation
 
-    x0In = np.ones((num_harm,1))*0.8
+    x0In = np.ones((num_harm,1))*0.9
     opt = optimize.minimize(findZOpt, x0 = x0In, args=({'Nfeval':0}), method = 'Nelder-Mead', \
-        options={'xatol':0.003,'fatol': 0.01, 'maxiter': 70, 'maxfev': 70})
+        options={'xatol':0.003,'fatol': 0.01, 'maxiter': max_num_iter, 'maxfev': max_num_iter})
+    N_iter = opt.nit
     zs=zsOr[1:num_harm+1]*opt.x #[0.0, a*opt.x[0], b*opt.x[1]]
     zs = np.insert(zs, [0], [0])
     self.zs = zs
@@ -136,4 +137,4 @@ def choose_Z_axis(self, num_harm = 0):
     self.order = "r2"
     self.calculate()
 
-    return 
+    return N_iter
