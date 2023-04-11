@@ -30,13 +30,17 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
     if N_axis>len(rc):
         N_axis = []
     if N_axis:
-        rc = rc[0:N_axis]
-        zs = zs[0:N_axis]
+        if N_axis<=len(rc):
+            rc = rc[0:N_axis]
+            zs = zs[0:N_axis]
+        else:
+            N_axis = []
     psi = f.variables['phi'][()]/2/np.pi
     psi_booz_vmec = np.abs(psi)
     am = f.variables['am'][()] # Pressure profile polynomial
     bsubumnc = f.variables['bsubumnc'][()]   
     bsubvmnc = f.variables['bsubvmnc'][()] 
+    gmnc = f.variables['gmnc'][()]
     rmnc = f.variables['rmnc'][()]
     zmns = -f.variables['zmns'][()] 
     gmnc = f.variables['gmnc'][()]
@@ -54,8 +58,10 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
         rs=[]
         zc=[]
         logger.info('Stellarator symmetric configuration')
+    # Vp_vmec = f.variables['vp'][()] 
+    # plt.plot(Vp_vmec)
     f.close()
-    
+
     # Save VMEC attributes to class
     cls.s_n = rc*(1+nfp**2*np.arange(0,np.size(rc),1)**2)/rc[0]
     cls.rmnc_vmec = rmnc
