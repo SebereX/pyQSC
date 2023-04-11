@@ -27,9 +27,11 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
     nfp = f.variables['nfp'][()]
     rc = f.variables['raxis_cc'][()]
     zs = f.variables['zaxis_cs'][()]
+    if N_axis>len(rc):
+        N_axis = []
     if N_axis:
-        rc = rc[0:N_axis-1]
-        zs = zs[0:N_axis-1]
+        rc = rc[0:N_axis]
+        zs = zs[0:N_axis]
     psi = f.variables['phi'][()]/2/np.pi
     psi_booz_vmec = np.abs(psi)
     am = f.variables['am'][()] # Pressure profile polynomial
@@ -37,6 +39,7 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
     bsubvmnc = f.variables['bsubvmnc'][()] 
     rmnc = f.variables['rmnc'][()]
     zmns = -f.variables['zmns'][()] 
+    gmnc = f.variables['gmnc'][()]
     xm_vmec = f.variables['xm'][()]
     xn_vmec = f.variables['xn'][()]
     iota_vmec = f.variables['iotas'][()] 
@@ -44,8 +47,8 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
         rs = -f.variables['raxis_cs'][()]
         zc = f.variables['zaxis_cc'][()]
         if N_axis:
-            rs = rs[0:N_axis-1]
-            zc = zc[0:N_axis-1]
+            rs = rs[0:N_axis]
+            zc = zc[0:N_axis]
         logger.info('Non stellarator symmetric configuration')
     except:
         rs=[]
@@ -57,6 +60,7 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
     cls.s_n = rc*(1+nfp**2*np.arange(0,np.size(rc),1)**2)/rc[0]
     cls.rmnc_vmec = rmnc
     cls.zmns_vmec = zmns
+    cls.gmnc_vmec = gmnc
     cls.xm_vmec = xm_vmec
     cls.xn_vmec = xn_vmec
     cls.psi_vmec = psi_booz_vmec

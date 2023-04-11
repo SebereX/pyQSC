@@ -35,6 +35,7 @@ class Qsc():
     from .Frenet_to_cylindrical import Frenet_to_cylindrical
     from .vmec_input import read_vmec
     from .qs_optim_config import choose_eta, choose_B22c, choose_Z_axis
+    from .optimize_nae import optimise_params
     from .to_vmec import to_vmec
     from .util import B_mag
     
