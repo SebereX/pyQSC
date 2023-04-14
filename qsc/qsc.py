@@ -31,6 +31,7 @@ class Qsc():
     from .plot import plot, plot_boundary, get_boundary, B_fieldline, B_contour, plot_axis, flux_tube
     from .Frenet_to_cylindrical import Frenet_to_cylindrical, to_RZ
     from .to_vmec import to_vmec
+    from .vmec_input import read_vmec
     from .util import B_mag
     from .configurations import from_paper, configurations
     
@@ -110,12 +111,13 @@ class Qsc():
         Driver for the main calculations.
         """
         self.init_axis()
-        self.solve_sigma_equation()
-        self.r1_diagnostics()
-        if self.order != 'r1':
-            self.calculate_r2()
-            if self.order == 'r3':
-                self.calculate_r3()
+        if self.order != 'r0':
+            self.solve_sigma_equation()
+            self.r1_diagnostics()
+            if self.order != 'r1':
+                self.calculate_r2()
+                if self.order == 'r3':
+                    self.calculate_r3()
     
     def get_dofs(self):
         """
@@ -213,7 +215,134 @@ class Qsc():
                     
         f.close()
         return q
-        
+    
+    @classmethod
+    def from_boozxform(cls, vmec_file, booz_xform_file, order='r2', min_s_for_fit = 0.05, max_s_for_fit = 0.4, N_phi = [], N_axis = [],
+                        rc=[], rs=[], zc=[], zs=[], sigma0=0, I2=0, p2=0, order_fit = 0):
+        """
+        Load a configuration from a VMEC and a BOOZ_XFORM output files
+        """
+        # Read properties of BOOZ_XFORM output file
+        f = netcdf.netcdf_file(booz_xform_file,'r',mmap=False)
+        bmnc = f.variables['bmnc_b'][()]
+        ixm = f.variables['ixm_b'][()]
+        ixn = f.variables['ixn_b'][()]
+        jlist = f.variables['jlist'][()]
+        nfp = f.variables['nfp_b'][()]
+        f.close()
+
+        # Read axis-shape from VMEC output file
+        psi_booz_vmec, rc, rs, zc, zs, am, bsubumnc, bsubvmnc = Qsc.read_vmec(cls, vmec_file, N_axis = N_axis)
+        psi_edge = psi_booz_vmec[-1]
+        # Calculate nNormal
+        stel = Qsc(rc=rc, rs=rs, zc=zc, zs=zs, nfp=nfp)
+        helicity = stel.iota - stel.iotaN
+
+        # Prepare coordinates for fit
+        psi_booz = psi_booz_vmec[jlist-1]
+        sqrt_psi_booz = np.sqrt(psi_booz)
+        mask = (psi_booz/psi_edge < max_s_for_fit) & (psi_booz/psi_edge > min_s_for_fit)
+        mask_vmec = (psi_booz_vmec/psi_edge < max_s_for_fit) & (psi_booz_vmec/psi_edge > min_s_for_fit)
+        # s_fine = np.linspace(0,1,400)
+        # sqrts_fine = s_fine
+        if N_phi:
+            phi = np.linspace(0,2*np.pi / nfp, N_phi)
+            B0_phi  = np.zeros(N_phi)
+            B1s_phi = np.zeros(N_phi)
+            B1c_phi = np.zeros(N_phi)
+            B20_phi = np.zeros(N_phi)
+            B2s_phi = np.zeros(N_phi)
+            B2c_phi = np.zeros(N_phi)
+            chck_phi = 1
+        else:
+            chck_phi = 0
+            N_phi = 200
+        ### PARAMETER FIT ####
+        # Perform fit of parameters for NAE
+        for jmn in range(len(ixm)):
+            m = ixm[jmn]
+            n = ixn[jmn]
+            if m>2:
+                continue
+            if m==0:
+                # For m=0, fit a polynomial in s (not sqrt(s)) that does not need to go through the origin.
+                if n==0:
+                    b_0 = bmnc[mask,jmn]
+                    poly_ord = np.arange(3+order_fit) # [2, 1, 0]
+                    z = np.polynomial.polynomial.polyfit(psi_booz[mask], b_0, poly_ord)
+                    B0 = z[0]
+                    B20 = z[1]/2*B0
+                if chck_phi==1:
+                    poly_ord = np.arange(3+order_fit)
+                    z = np.polynomial.polynomial.polyfit(psi_booz[mask], bmnc[mask,jmn], poly_ord)
+                    B0_phi += z[0] * np.cos(n*phi)
+                    B20_phi += z[1] * np.cos(n*phi)/2*b_0[0]
+            if m==1:
+                if ixn[jmn]-ixm[jmn]*helicity==0:
+                    poly_ord = np.arange(1,4+2*order_fit,2) # [1, 3]
+                    b_cos = bmnc[mask,jmn]
+                    z = np.polynomial.polynomial.polyfit(sqrt_psi_booz[mask], b_cos, poly_ord)
+                    etabar = z[1]/np.sqrt(2*B0)
+                    B31cp = z[3]
+                if chck_phi==1:
+                    poly_ord = np.arange(1,4+2*order_fit,2)
+                    z = np.polynomial.polynomial.polyfit(sqrt_psi_booz[mask],bmnc[mask,jmn], poly_ord)
+                    B1c_phi += z[1] * np.cos((n-helicity)*phi)*np.sqrt(B0/2)
+                    B1s_phi += z[1] * np.sin((n-helicity)*phi)*np.sqrt(B0/2)
+            if m==2:
+                # For m=2, fit a polynomial in s (not sqrt(s)) that does need to go through the origin.
+                if ixn[jmn]-ixm[jmn]*helicity==0:
+                    poly_ord = np.arange(1,3+order_fit) # [1, 2]
+                    z = np.polynomial.polynomial.polyfit(psi_booz[mask], bmnc[mask,jmn], poly_ord)
+                    B2c = z[1]/2*B0
+                if chck_phi==1:
+                    poly_ord = np.arange(1,3+order_fit)
+                    z = np.polynomial.polynomial.polyfit(psi_booz[mask], bmnc[mask,jmn], poly_ord)
+                    B2c_phi += z[1] * np.cos((n-2*helicity)*phi)/2*B0
+                    B2s_phi += z[1] * np.sin((n-2*helicity)*phi)/2*B0
+
+        # Compute B31c: note that we want the 1/B**2 B31c component and not that of B (the shear
+        # expression was obtained using the Jacobian form of |B|). Very sensitive, does not appear
+        # to be too reliable (perhaps need a larger s_max for the fit). Often better to take B31c=0 for shear
+        B20c = 4*B0**4*(0.75*B0*etabar**2-B20)
+        B22c = 4*B0**4*(0.75*B0*etabar**2-B2c)
+        eta = etabar*np.sqrt(2/B0)
+        B31c = -2/B0**2*(B31cp/B0+1.5*eta*(B20c*B0**2+B22c/2*B0**2)-15*eta**3/8)
+        # print(B31c)
+
+        # Read I2 from VMEC
+        if I2==0:
+            for jmn in range(len(ixm)):
+                m = ixm[jmn]
+                n = ixn[jmn]
+                if m==0 and n==0:
+                    poly_ord = np.arange(3+order_fit)   # [0, 1, 2]
+                    G_psi = bsubvmnc[mask_vmec,jmn]
+                    I_psi = bsubumnc[mask_vmec,jmn]
+                    z = np.polynomial.polynomial.polyfit(psi_booz_vmec[mask_vmec], I_psi, poly_ord)
+                    I2 = z[1]*B0/2
+                    if np.abs(I2)<1e-10:
+                        I2=0
+        # Read p2 from VMEC
+        if p2==0:
+            r  = np.sqrt(2*psi_edge/B0)
+            p2 = am[1]/r/r
+
+        ### CONSTRUCT NAE MODEL (using same cls as VMEC read) ####
+        if order=='r1':
+            q = cls(rc=rc,rs=rs,zc=zc,zs=zs,etabar=etabar,nphi=N_phi,nfp=nfp,B0=B0,sigma0=sigma0, I2=I2)
+        else:
+            q = cls(rc=rc,rs=rs,zc=zc,zs=zs,etabar=etabar,nphi=N_phi,nfp=nfp,B0=B0,sigma0=sigma0, I2=I2, B2c=B2c, order=order)
+        if chck_phi==1:
+            q.B0_boozxform_array=B0_phi
+            q.B1c_boozxform_array=B1c_phi
+            q.B1s_boozxform_array=B1s_phi
+            q.B20_boozxform_array=B20_phi
+            q.B2c_boozxform_array=B2c_phi
+            q.B2s_boozxform_array=B2s_phi
+        q.B31c = B31c
+        return q
+    
     def min_R0_penalty(self):
         """
         This function can be used in optimization to penalize situations
