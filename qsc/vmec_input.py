@@ -27,6 +27,8 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
     nfp = f.variables['nfp'][()]
     rc = f.variables['raxis_cc'][()]
     zs = f.variables['zaxis_cs'][()]
+    if N_axis>len(rc):
+        N_axis = []
     if N_axis:
         if N_axis<=len(rc):
             rc = rc[0:N_axis]
@@ -40,7 +42,8 @@ def read_vmec(cls, vmec_file, path = os.path.dirname(__file__), N_axis = []):
     bsubvmnc = f.variables['bsubvmnc'][()] 
     gmnc = f.variables['gmnc'][()]
     rmnc = f.variables['rmnc'][()]
-    zmns = -f.variables['zmns'][()]     
+    zmns = -f.variables['zmns'][()] 
+    gmnc = f.variables['gmnc'][()]
     xm_vmec = f.variables['xm'][()]
     xn_vmec = f.variables['xn'][()]
     iota_vmec = f.variables['iotas'][()] 

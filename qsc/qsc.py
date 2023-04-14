@@ -28,8 +28,11 @@ class Qsc():
     from .calculate_r3 import calculate_r3, calculate_shear
     from .mercier import mercier
     from .r_singularity import calculate_r_singularity
-    from .plot import plot, plot_boundary, get_boundary, B_fieldline, B_contour, plot_axis, flux_tube
+    from .plot import plot, plot_boundary, get_boundary, get_boundary_vmec, B_fieldline, B_contour, plot_axis, flux_tube
     from .Frenet_to_cylindrical import Frenet_to_cylindrical, to_RZ
+    from .vmec_input import read_vmec
+    from .qs_optim_config import choose_eta, choose_B22c, choose_Z_axis
+    from .optimize_nae import optimise_params
     from .to_vmec import to_vmec
     from .vmec_input import read_vmec
     from .util import B_mag
